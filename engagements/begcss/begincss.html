@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning CSS</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <nav> 
+        <a href="links.html">Home</a> 
+        <a href="structural.html">About</a> 
+    </nav>
+
+    <header>
+        <h1> Suli's Engagement - Beginning CSS</h1>
+    </header>
+
+    <main>
+        <p> <strong>The difference between inline, embedded, and external CSS:</strong> <br>
+
+        Inline is inserting the style attribute into a tag, such as h1 or p, to change things like its color. It only makes changes to that specific tag. Embedded involves inserting the style tag into the head tag, but it only makes changes to that one page. External involves creating a separate CSS file and putting the CSS rules in it, then using a link tag in the head to connect that file to the HTML pages. </p>
+
+        <p><strong>Explain why you should only use external CSS:</strong> <br>
+        It's good for easy reuse; if all modifications live in one file connected to several HTML pages, you only have to make changes in the CSS file, and everything will be updated across all HTML files, as opposed to modifying every individual page. Another reason is that it ensures neatness and consistency, since the styles put in the CSS files for headers or paragraphs will be the same throughout all pages, creating a seamless experience when going through pages.</p>
+
+        <p><strong>What is a selector used for?</strong> <br>
+        A selector is used to specify what kind of elements you would like to modify, for example p for paragraphs and h1 for headings. Without selectors, the browser won't know which elements to apply a style to. The 3 main types of selectors are the element selector, which is the type I mentioned in my example, the class selector, which starts with a ".", and the ID selector, which starts with a "#". The element selector modifies every tag of that type, for example h1. The class selector changes any element with that class, for example .highlight, which styles every element given that class. The ID selector modifies one specific element, for example #main-title. </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Suli Taufa</p>
+    </footer>
+</body>
+</html>
