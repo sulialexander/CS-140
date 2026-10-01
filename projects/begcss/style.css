@@ -1,0 +1,22 @@
+body {
+    background-color: #01172F;
+    color: #F7DBA7;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: #F7DBA7;
+}
+
+footer {
+    color: #9CA59C;
+}

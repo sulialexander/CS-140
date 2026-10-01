@@ -1,0 +1,27 @@
+header h1 {
+    color: darkblue;
+}
+
+header p {
+    color: deepskyblue;
+}
+
+main h1 { color: chartreuse;
+}
+
+#idexample { color: darkgreen; 
+}
+
+main p {
+    color: forestgreen;
+}
+
+.classex {
+    color: brown;
+}
+
+.bold {font-weight: bolder;}
+
+.answercolor p {
+    color: darkgreen;
+}
