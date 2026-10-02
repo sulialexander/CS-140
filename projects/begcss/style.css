@@ -17,6 +17,14 @@ a {
     color: #F7DBA7;
 }
 
-footer {
+.thirdcolor {
     color: #9CA59C;
+}
+
+#mainheader {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
