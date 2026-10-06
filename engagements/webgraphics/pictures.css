@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.imgsize {
+    width: 150px;
+    height: auto;
+}
+
+li p {
+    margin-top: 4px;
+}
