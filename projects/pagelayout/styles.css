@@ -23,7 +23,7 @@ figcaption {
 nav a {
     font-weight: bold;
     text-transform: uppercase;
-    padding: 2px 2px;
+    padding: 5px 10px;
     border: 2px solid #7d7c7c;
     border-radius: 3px;
     display: inline-block;
