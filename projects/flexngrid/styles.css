@@ -1,0 +1,38 @@
+nav {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+nav a {
+    display: block;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card img{
+    max-width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+footer a {
+    display: block;
+}
