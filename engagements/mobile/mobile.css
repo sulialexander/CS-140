@@ -1,0 +1,107 @@
+/* ---------- General ---------- */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* ---------- Layout ---------- */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;  /* sidebar + main content */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* ---------- Cards ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 cards per row */
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;    /* crops instead of stretching */
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  background: #1e3a5f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+@media print {
+  nav, .sidebar, .btn {
+    display: none;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .card {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;   
+  }
+
+  .content {
+    order: -1;                   
+  }
+
+  .cards {
+    grid-template-columns: 1fr;   
+  }
+
+    nav {
+    gap: 0.5rem;
+  }
+
+  nav a {
+    flex: 1;                    
+    text-align: center;
+    padding: 0.75rem 0.5rem;    
+    min-height: 44px;            
+  }
+}
