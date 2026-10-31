@@ -1,0 +1,54 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+
+}
+
+aside {
+    width: 30%;
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 1 1 250px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}
