@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Suli's Table Engagement</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1> My Class Schedule</h1>
 
-        <table border="1">
+        <table id="schedule">
             <caption>My Class Schedule</caption>
             <thead>
                 <tr>
@@ -130,24 +131,17 @@
 
         <h2>Questions</h2>
             <ol>
-                <li>When do you use a table? 
-                    <p>I used a table because it keeps everything organized in rows and columns. That way you can easily look across and compare my classes, the times, the rooms, and the credits all in one spot.</p> 
+                <li>Why don’t we use the border attribute?
+                    <p>The border attribute isn’t really the best way to style tables because it doesn’t give you as much control as CSS does. With CSS, you can style things more exactly, and it’s easier to update and keep your code organized later on.</p> 
                 </li>
 
-                <li>When do you not use a table?
-                  <p>I learned that tables aren't meant for page layout, like lining up a photo next to text. CSS is the better way to do that because it's more flexible and it makes the site easier for everyone to use.</p> 
+                <li>What is the easiest way to color every other row a different color?
+                    <p>The simplest way to give every other row a different color is to use the CSS pseudo-class :nth-child(even) or :nth-child(odd). That way you can style alternating rows without adding extra classes or inline styles to each one.</p>
+                  
                 </li>
 
-                <li>When do you need extra work for accessibility? 
-                    <p>Once my table got more complex, like grouping semesters with rowspan and colspan and adding a total row, I had to think more about accessibility. Using scope attributes and a caption helps screen readers figure out how everything in the table connects.</p>
-                </li>
-
-                <li>Which question you asked AI today helped you learn the most, and why? 
-                    <p>The rowspan question, where I had to remove a cell, is the one that helped me learn the most. It clicked for me once I saw how rowspan stretches one cell over multiple rows, so I had to delete the extra cells below it. After that, grouping rows together made a lot more sense and the table looked way more organized.</p>
-                </li>
-
-                <li>Did AI ever try to give you more than you asked for, like writing your code? What did you do?
-                    <p>Yeah, AI sometimes gave me more info than I needed, but it actually helped me understand why things are done a certain way. It didn't write my code. I wrote it myself, and AI just helped explain things and answer questions whenever I got stuck.</p> 
+                <li>What does the value in the parentheses of your pseudo-class mean? Give one other value you could use and which rows it would select.
+                    <p>The value inside the parentheses of :nth-child tells it which position the element is in inside its parent. For example, :nth-child(2) picks the second child element. You could also use something like :nth-child(3n+1), which picks every third element starting with the first one (so the 1st, 4th, 7th, and so on).</p>
                 </li>
             </ol>
     </body>

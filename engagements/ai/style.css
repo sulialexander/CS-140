@@ -1,0 +1,38 @@
+body { 
+    font-family: 'Arial', sans-serif;
+}
+
+#schedule {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    border-spacing: 10px;
+}
+
+th {
+    border: 1px solid #000000;
+    background-color: #60b9f5;
+    color: #090909;
+}
+
+td {
+    border: 1px solid #000000;
+    vertical-align: middle;
+
+}
+
+caption {
+    caption-side: top;
+}
+
+tr:nth-child(even) {
+    background-color: #e5ed75;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+tr:hover {
+    background-color: #93ff75;
+}
+
