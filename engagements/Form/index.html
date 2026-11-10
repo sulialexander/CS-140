@@ -1,0 +1,133 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suli's Form Engagement</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Suli's Form Engagement</h1>
+        </header>
+
+        <main>
+            <form action="formproccessing.html" method="post">
+                <div class="form-row">
+                    <label for="personname">Full Name:</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" value="sulivaoahi@byuh.edu">
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="">Select State</option>
+                        <option value="California">California</option>
+                        <option value="Texas">Texas</option>
+                        <option value="New York">New York</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Illinois">Illinois</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Where did you hear about us?</legend>
+
+                    <input type="radio" id="ig" name="hearabout" value="Instagram">
+                    <label for="ig">Instagram</label>
+
+                    <input type="radio" id="fb" name="hearabout" value="Facebook">
+                    <label for="fb">Facebook</label>
+
+                    <input type="radio" id="google" name="hearabout" value="Google">
+                    <label for="google">Google</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What are your interests?</legend>
+
+                    <input type="checkbox" id="photo" name="interests" value="Photography">
+                    <label for="photo">Photography</label>
+
+                    <input type="checkbox" id="travel" name="interests" value="Travel">
+                    <label for="travel">Travel</label>
+                    
+                    <input type="checkbox" id="gym" name="interests" value="Gym">
+                    <label for="gym">Gym</label>
+                </fieldset>
+
+                <div class="form-row">
+                    <label for="about">Tell us about yourself:</label>
+                    <textarea id="about" name="about" rows="4" cols="50" placeholder="About you"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="birthday">Birthday:</label>
+                    <input id="birthday" type="date" name="birthday">
+                </div>
+
+
+                <div class="form-row">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+
+            </form>
+
+            <section>
+                <h2>Questions</h2>
+                    <ol>
+                        <li>
+                            <strong>The form tag has an "action" attribute. What does it do?</strong>
+                            <p>The "action" attribute is just the address for your form data. When you click submit, that's where everything gets sent.</p>
+                        </li>
+
+                        <li>
+                            <strong>The form tag has a "method" attribute. What does it do?</strong>
+                            <p>The "method" attribute is basically the delivery style for your form data. GET puts the info right in the URL, while POST sends it more quietly behind the scenes.</p>
+                        </li>
+
+                        <li>
+                            <strong>What is the difference between a "POST" and a "GET"?</strong>
+                            <p>When GET is used, all your answers can be found in the URL once the form is submitted. POST, on the other hand, doesn’t reveal that information. So POST is better for passwords, because it doesn’t show them openly to someone who might be next to you or behind you when you type. A GET URL also gets saved in your browser history, so your password could be seen later too.</p>
+                        </li>
+
+                        <li>
+                            <strong>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</strong>
+                            <p>Text box: You pre-fill it with the "value" attribute, and add a hint with the "placeholder" attribute. The value shows up as soon as the page loads, but the placeholder only shows when the box is empty.</p>
+
+                            <p>Textarea: Instead of a value attribute, you just put the pre-set text between the opening and closing textarea tags. The placeholder works the same as a text box.</p>
+
+                            <p>Select box: You pick the default option by adding "selected" to one of the option tags. There's no placeholder for select boxes.</p>
+
+                            <p>Checkbox: Adding "checked" makes the box already ticked when the page loads. No placeholder here either.</p>
+
+                            <p>Radio button: Same idea as checkboxes. Add "checked" to the one you want picked by default. No placeholder.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>List all the form controls that HTML5 added. Which ones did you put in your form?</strong>
+                            <p>HTML5 added a bunch of new input types: color, date, datetime-local, email, month, number, range, search, tel, time, url, and week. It also added a couple of new elements, datalist and output. In my form, I used two of them: email for the email field, and date for the birthday field so you get a little calendar to pick from.
+                            </p>
+                        </li>
+                    </ol>
+    </section>
+
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Suli's Form Engagement. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
