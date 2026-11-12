@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suli's Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book A Photo Shoot</h1>
+
+    </header>
+
+    <main>
+        <form action="formproccessing.html" method="get">
+            <div class="form-row">
+                <label for="personname">Full Name:</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="someone@example.com">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="form-row">
+                <label for="shootdate">Shoot Date:</label>
+                <input type="date" name="shootdate" id="shootdate">
+            </div>
+
+            <div class="form-row">
+                <label for="tel">Mobile Number:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Mobile Number">
+            </div>
+
+            <div class="form-row">
+                <label for="shoottype">Shoot Type:</label>
+                <select name="shoottype" id="shoottype">
+                    <option value="" disabled selected>Shoot Type</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="landscape">Landscape</option>
+                    <option value="macro">Macro</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Shoot Location</legend>
+
+                <label for="beach">Beach</label>
+                <input type="radio" name="location" id="beach" value="beach"> 
+
+                <label for="temple">Temple</label>
+                <input type="radio" name="location" id="temple" value="temple">
+                
+                 <label for="other">Other</label>
+                <input type="radio" name="location" id="other" value="other">
+
+            </fieldset>
+
+            <div class="form-row">
+                <label for="vision">Tell me about your vision for the shoot:</label>
+                <textarea name="vision" id="vision"></textarea>
+            </div>
+
+             <div class="form-row">
+                <label for="terms">I agree to the book and cancellation terms:</label>
+                <input type="checkbox" name="terms" id="terms">
+            </div>
+
+             <div class="form-row">
+                
+                <input type="submit" name="submit" id="submit" value="Book My Shoot">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Suli Taufa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
