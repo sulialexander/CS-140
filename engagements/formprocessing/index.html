@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suli's Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book A Photo Shoot</h1>
+
+    </header>
+
+    <main>
+        <form id="signup-form" action="formproccessing.html" method="get">
+            <div class="form-row">
+                <label for="personname">Full Name:</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="someone@example.com">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="form-row">
+                <label for="shootdate">Shoot Date:</label>
+                <input type="date" name="shootdate" id="shootdate">
+            </div>
+
+            <div class="form-row">
+                <label for="tel">Mobile Number:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Mobile Number">
+            </div>
+
+            <div class="form-row">
+                <label for="shoottype">Shoot Type:</label>
+                <select name="shoottype" id="shoottype">
+                    <option value="" disabled selected>Shoot Type</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="engagement">Engagement</option>
+                    <option value="event">Event</option>
+                    <option value="family">Family</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Shoot Location</legend>
+
+                <input type="radio" name="location" id="beach" value="beach"> 
+                <label for="beach">Beach</label>
+                
+                <input type="radio" name="location" id="temple" value="temple">
+                <label for="temple">Temple</label>
+                
+                <input type="radio" name="location" id="other" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <div class="form-row">
+                <label for="vision">Tell me about your vision for the shoot:</label>
+                <textarea name="vision" id="vision"></textarea>
+            </div>
+
+             <div class="form-row">
+                <label for="terms">I agree to the booking and cancellation terms:</label>
+                <input type="checkbox" name="terms" id="terms">
+            </div>
+
+             <div class="form-row">
+                
+                <input type="submit" name="submit" id="submit" value="Book My Shoot">
+            </div>
+        </form>
+    </main>
+
+    <section id="questions">
+        <h2>Questions</h2>
+
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a programming language that makes websites interactive. HTML is the structure and CSS is the look, but JavaScript is what lets the page actually do stuff, like check a form, show alerts, or change things on the page when you click something. It was first called Mocha, then LiveScript, and then they changed it to JavaScript because Java was popular at the time.</p>
+
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p> The first way is in the browser. You can put it inside a script tag in your HTML like I did here, link to a separate .js file, or just type it straight into the browser console. The second way is outside the browser using Node.js.
+        </p>
+
+        <h3>What is jQuery? Is it still popular today?</h3>
+        <p>jQuery is a JavaScript library that made it way easier to do things like grab elements on the page, handle clicks, and add animations, and back then it also helped your code work the same across different browsers. It's not as popular for new projects anymore, because plain JavaScript can now do most of what jQuery used to do, and a lot of people use React instead. But it's still used on a ton of websites.</p>
+
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>React, made by Facebook and it lets you build websites out of reusable pieces called components. In the 2025 Stack Overflow survey, about 45% of developers said they used it, making it the top front-end library.</p>
+
+        <h3> How does your code prevent the form from being submitted? Why do we need to prevent it? </h3> 
+        <p>My code uses event.preventDefault() at the start of the submit event listener. Normally when you submit a form, the browser sends the data and goes to the page in the action, which for my form is formproccessing.html, so the page would reload or change. preventDefault() stops that from happening. We need it so my JavaScript can check the inputs first, like making sure there's a name, email, and shoot date, and show an alert if something's missing. Without it the page would just leave or reload, my checks wouldn't stop anything, and I wouldn't get to see my formData in the console.</p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Suli Taufa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+   
+
+    const fullname = document.getElementById('personname').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+   const age = document.getElementById('shootdate').value;
+
+    if (!fullname || !email) {
+        alert("You need a name and email.");
+        return;
+    }
+
+    if (!age) {
+    alert("Please pick a shoot date.");
+        return;
+    }
+
+    const formData = {
+        name: fullname,
+        email: email,
+        password: password,
+        age: age
+    };
+
+    alert("Form Submitted");
+    console.log(formData);
+    });
+        
+    </script>
+
+</body>
+</html>
