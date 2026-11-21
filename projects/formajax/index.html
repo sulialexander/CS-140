@@ -80,20 +80,7 @@
         </form>
     </main>
 
-    <section id="questions">
-        <h2>Questions</h2>
-        <h3>What is AJAX?</h3>
-            <p>AJAX stands for Asynchronous JavaScript and XML. It's a way for JavaScript to send a request to a server and get a reply back without reloading the whole page. In my form, I use XMLHttpRequest to ask for submit.json, and when the reply comes back, my code puts "Your booking has been submitted" under the button. The page never reloads, and the rest of my code keeps running while it waits for the reply, which is why the Success alert shows up first.</p>
-
-        <h3>Why do you put your JS code in a separate file?</h3>
-            <p>It keeps my HTML clean and easier to read, since the structure and the code aren't all mixed together. It also means I can use the same JavaScript file on other pages without copying it, and the browser can save (cache) the file so the page loads faster next time. It's also easier to find and fix things when all my JavaScript is in one place.</p>
-
-        <h3>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
-            <p>I press F12 to open DevTools. In the Console tab, any errors show up in red, and on the right side it shows the file name and line number, like script.js:12. Clicking that link takes me straight to the line with the problem. I also use the Network tab to check if my files loaded. A 200 means it worked, and a 404 means the file wasn't found. For example, the Network tab showed my submit.json request came from script.js:31, which is the line in my JavaScript file that sends it.</p>
-
-        <h3>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids.</h3>
-            <p>Yes, they match. The ids my JavaScript uses are signup-form, personname, email, shootdate, and message, and they're spelled the same in my HTML. My other ids are tel, shoottype, beach, temple, other, vision, terms, and submit. The Console shows no errors.</p>
-    </section>
+    
 
     <footer>
         <p>&copy; 2026 Suli Taufa. All rights reserved.</p>
